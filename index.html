@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Privacy policy for WRITLESS: Long Live Someone.">
+  <title>WRITLESS Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f6f0e3;
+      --muted: #c9c0ae;
+      --paper: #11130f;
+      --panel: #1d2019;
+      --line: #484b3d;
+      --gold: #e3bd62;
+      --green: #9fc59a;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: radial-gradient(circle at 82% -12%, #4b3816 0, transparent 34rem), var(--paper);
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+    header, main, footer { width: min(52rem, calc(100% - 2rem)); margin-inline: auto; }
+    header { padding: clamp(3rem, 9vw, 6rem) 0 2rem; }
+    .eyebrow {
+      margin: 0 0 .6rem;
+      color: var(--gold);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    h1 { max-width: 12ch; margin: 0; font: 700 clamp(2.7rem, 8vw, 5.2rem)/.98 Georgia, serif; }
+    h2 { margin: 2.5rem 0 .7rem; font: 700 clamp(1.45rem, 4vw, 2rem)/1.15 Georgia, serif; }
+    h3 { margin: 1.45rem 0 .35rem; color: var(--gold); font-size: 1.03rem; }
+    p, li { color: var(--muted); }
+    strong { color: var(--ink); }
+    a { color: var(--gold); text-underline-offset: .18em; }
+    a:hover, a:focus-visible { color: var(--ink); }
+    .summary {
+      margin: 1.5rem 0 0;
+      padding: 1.1rem 1.2rem;
+      border: 1px solid var(--line);
+      border-left: .45rem solid var(--gold);
+      border-radius: .4rem;
+      background: linear-gradient(145deg, #242116, var(--panel));
+    }
+    .facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; margin-top: 1rem; }
+    .fact { padding: .9rem 1rem; border: 1px solid var(--line); border-radius: .45rem; background: var(--panel); }
+    .fact span { display: block; color: var(--gold); font-size: .76rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .fact strong { display: block; margin-top: .2rem; }
+    section { padding-bottom: .25rem; border-top: 1px solid var(--line); }
+    ul { padding-left: 1.3rem; }
+    footer { margin-top: 3rem; padding: 1.4rem 0 3rem; border-top: 1px solid var(--line); }
+    footer p { margin: 0; font-size: .9rem; }
+    @media (max-width: 36rem) { .facts { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">WRITLESS · Long Live Someone</p>
+    <h1>Privacy policy</h1>
+    <p class="summary"><strong>Plain-language summary:</strong> WRITLESS has no ads, no public chat, and no user-facing WRITLESS account. Online Relay play uses a disposable Unity identifier and network data. Google Play supplies purchase status for the optional permanent unlock. WRITLESS does not receive your payment-card or bank details.</p>
+    <div class="facts" aria-label="Policy facts">
+      <div class="fact"><span>Effective</span><strong>August 26, 2026</strong></div>
+      <div class="fact"><span>Package</span><strong>com.longlivesomeone.writless</strong></div>
+      <div class="fact"><span>Audience</span><strong>Ages 13 and older</strong></div>
+      <div class="fact"><span>Developer</span><strong>Shannon Brown</strong></div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Scope</h2>
+      <p>This policy describes the current pre-release testing build of <strong>WRITLESS: Long Live Someone</strong> offered by Shannon Brown. It covers data handled by the app, Unity Gaming Services, and Google Play Billing. It does not describe unrelated websites, devices, or services.</p>
+    </section>
+
+    <section>
+      <h2>2. Data the app may handle</h2>
+
+      <h3>Unity Authentication and Relay</h3>
+      <p>When an authorized Relay multiplayer flow is used, Unity may receive:</p>
+      <ul>
+        <li>a disposable pseudonymous Unity Player ID;</li>
+        <li>an IP address, from which approximate location may be inferred for network routing;</li>
+        <li>multiplayer or gameplay-session actions needed to allocate, join, operate, and close a Relay session; and</li>
+        <li>network and app-performance data used to operate and diagnose the service.</li>
+      </ul>
+      <p>These data are used for app functionality, authentication, account management of the SDK-internal identity, service operation, and diagnostics. Unity receives and processes the Player ID. WRITLESS does not sell these data, use them for advertising, or expose the Player ID in public logs or evidence.</p>
+
+      <h3>Google Play Billing</h3>
+      <p>If you choose the one-time <strong>Full Game Unlock</strong>, Google Play provides purchase and ownership status so the app can grant or restore permanent access. WRITLESS does not receive your payment-card number, bank-account details, or Google Account password. The app does not retain the raw Play purchase token in its Unity data model; it uses one-way hashes and a protected on-device entitlement cache for verification and offline access.</p>
+
+      <h3>On-device data</h3>
+      <p>Game saves, settings, and the protected entitlement cache are stored on the device. Data that stays only on the device is not treated as collected in Google Play's Data Safety label. Uninstalling the app or clearing its storage removes ordinary local app data and device-local keys. Google Play purchase history remains managed by Google and can be used to restore verified ownership.</p>
+    </section>
+
+    <section>
+      <h2>3. Accounts and identifiers</h2>
+      <p>WRITLESS does not offer a user-facing account, sign-up form, profile, password, social login, or cross-device WRITLESS identity. The disposable Unity identifier exists only to operate bounded Relay functionality. It cannot be used by a player to sign in to a WRITLESS account or recover a profile on another device.</p>
+    </section>
+
+    <section>
+      <h2>4. Sharing and service providers</h2>
+      <p>WRITLESS uses Unity Gaming Services as a network and authentication service provider and Google Play as its billing and distribution provider. Those providers process data under their own terms and privacy notices. WRITLESS does not share data with advertising networks, data brokers, or social networks.</p>
+      <ul>
+        <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Retention and deletion</h2>
+      <p>WRITLESS clears local anonymous Unity credentials when a bounded Relay session closes. This local cleanup is not represented as deletion of Unity's service records. Unity and Google retain service records according to their applicable policies, operational needs, legal obligations, and user controls.</p>
+      <p>Because WRITLESS does not provide a user-facing account, there is no WRITLESS account to delete. You can remove local game data by clearing the app's storage or uninstalling it. Purchase records are controlled through Google Play. Privacy questions may be sent to the contact address below; do not email passwords, payment details, raw access tokens, or other secrets.</p>
+    </section>
+
+    <section>
+      <h2>6. Security</h2>
+      <p>Supported provider traffic is encrypted in transit. Relay sessions use encrypted transport, and the on-device entitlement cache is authenticated with a key protected by Android. No system can guarantee absolute security, and this pre-release policy does not claim production-scale certification.</p>
+    </section>
+
+    <section>
+      <h2>7. Children</h2>
+      <p>WRITLESS is directed to people age 13 and older and is not designed for children under 13. The app does not knowingly seek personal information from children under 13.</p>
+    </section>
+
+    <section>
+      <h2>8. International processing</h2>
+      <p>Unity and Google may process service data in countries other than the country where you live. Their privacy notices describe their international processing and transfer practices.</p>
+    </section>
+
+    <section>
+      <h2>9. Changes</h2>
+      <p>This policy will be updated when the app's data practices materially change. The effective date above identifies the current version. Google Play's Data Safety label is maintained to reflect versions currently distributed through Play.</p>
+    </section>
+
+    <section>
+      <h2>10. Contact</h2>
+      <p>Privacy contact: <a href="mailto:shannon@thebrownpad.com">shannon@thebrownpad.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>WRITLESS: Long Live Someone · Privacy policy · Effective August 26, 2026</p>
+  </footer>
+</body>
+</html>
